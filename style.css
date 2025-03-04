@@ -225,7 +225,9 @@ li.deleted-item {
 
 @media (max-width: 600px) {
     .container {
-        width: 90%;
+        display: flex;
+        width: 80%;
+        max-width: 90%;
         padding: 15px;
     }
     .todo-body input {
