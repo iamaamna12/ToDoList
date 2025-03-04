@@ -7,13 +7,28 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <div class="todo-header">
-            <h2>ToDo List</h2>
-            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTkxdGpqeHV0cmNiazZtbjNoaWNxb285ZXlwajdodGU0czBxOWJ2NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pWCYY9yODcBQ4/giphy.gif" width="20px" height="50px" />
-       </div>
+
+
 
         <div class="container">
-            <!-- to add the tasks-->
+            <div class="todo-header">
+                <h2>ToDo List</h2>
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTkxdGpqeHV0cmNiazZtbjNoaWNxb285ZXlwajdodGU0czBxOWJ2NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pWCYY9yODcBQ4/giphy.gif" width="20px" height="50px" />
+           </div>
+           <div class="todo-body">
+            <input
+                type="text"
+                id="todoText"
+                class="todo-input"
+                placeholder="Add your items"
+            />
+            <img
+                src="/images/plus.png"
+                alt="+"
+                id="AddUpdateClick"
+                onclick="CreateToDoItems();"
+            />
+            </div>
         </div>
 
 
