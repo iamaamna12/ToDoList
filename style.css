@@ -223,32 +223,93 @@ li.deleted-item {
     }
 }
 
+/* Mobile Devices */
 @media (max-width: 600px) {
-    .container {
+    body {
         display: flex;
-        width: 80%;
-        max-width: 90%;
-        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
     }
+
+    .container {
+        width: 95%;
+        max-width: 400px; /* Keeps it at a readable size */
+        margin: auto; /* Ensures it's centered */
+        padding: 20px;
+    }
+
+    .todo-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
     .todo-body input {
-        font-size: 16px;
+        font-size: 18px;
+        width: 80%; /* Avoid full width so it doesn’t touch edges */
     }
+
     .todo-controls {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
+    }
+
+    footer {
+        position: relative;
+        bottom: 10px;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 3px;
     }
 }
 
+
 /* Tablets */
 @media (max-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+
     .container {
-        width: 80%;
+        width: 85%;
+        max-width: 600px; /* Prevents it from stretching too much */
+        margin: auto;
+        padding: 25px;
     }
+
+    .todo-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
     .todo-body input {
-        font-size: 18px;
+        font-size: 20px;
+        width: 85%; /* Keeps it from touching edges */
     }
+
     .todo-controls {
-        width: 22px;
-        height: 22px;
+        width: 28px;
+        height: 28px;
+    }
+
+    footer {
+        position: relative;
+        bottom: 15px;
+        text-align: center;
+        width: 100%;
     }
 }
+
