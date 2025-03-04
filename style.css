@@ -222,3 +222,31 @@ li.deleted-item {
         transform: scale(0.9);
     }
 }
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    .todo-body input {
+        font-size: 16px;
+    }
+    .todo-controls {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+    .todo-body input {
+        font-size: 18px;
+    }
+    .todo-controls {
+        width: 22px;
+        height: 22px;
+    }
+}
