@@ -1,9 +1,11 @@
 # 📝 To-Do List App
 
 A simple and interactive **To-Do List App** built using **HTML, CSS, and JavaScript**. It allows users to **add, edit, delete, and mark tasks as completed**, with all data stored in **local storage**.
+<img width="1440" alt="Screenshot 2025-03-04 at 11 25 29 PM" src="https://github.com/user-attachments/assets/d24529e8-b7e4-4c0a-8201-667ae0502e96" />
 
 ---
-
+<a href="https://todolistbyaamna.netlify.app" target="_blank">Click here to see it in action</a>
+---
 ## 🚀 Features
 
 ✅ **Add Tasks** – Easily add new to-do items.  
@@ -19,11 +21,11 @@ A simple and interactive **To-Do List App** built using **HTML, CSS, and JavaScr
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/yourusername/todo-list.git
+   git clone https://github.com/iamaamna12/ToDoList.git
    ```
 2. **Open the project folder**
    ```sh
-   cd todo-list
+   cd ToDoList
    ```
 3. **Run the app**  
    Simply open `index.html` in your browser!
