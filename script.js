@@ -89,31 +89,59 @@ function ReadToDoItems() {
   }
   
   function UpdateOnSelectionItems() {
-    let IsPresent = false;
-    todo.forEach((element) => {
-      if (element.item == todoValue.value) {
-        IsPresent = true;
-      }
-    });
-  
-    if (IsPresent) {
-      setAlertMessage("This item already present in the list!");
-      return;
+    let newText = todoValue.value.trim();
+
+    if (newText === "") {
+        setAlertMessage("Please enter a valid task!");
+        return;
     }
-  
+
+    let isPresent = todo.some(element => element.item === newText);
+    if (isPresent) {
+        setAlertMessage("This item is already in the list!");
+        return;
+    }
+
+    // Find and update the correct task in the array
     todo.forEach((element) => {
-      if (element.item == updateText.innerText.trim()) {
-        element.item = todoValue.value;
-      }
+        if (element.item === updateText.innerText.trim()) {
+            element.item = newText;
+        }
     });
+
+    // Find the list item container
+    let parentLi = updateText.closest("li");
+
+    // Ensure checkbox state is retained
+    let checkIcon = parentLi.querySelector(".check");
+    let isChecked = checkIcon.src.includes("checkmark.png");
+
+    // **Update the whole item structure to ensure the circle appears**
+    parentLi.innerHTML = `
+        <div>
+            <img class="check todo-controls" onclick="CompletedToDoItems(this)" 
+                 src="${isChecked ? "/images/checkmark.png" : "/images/circle.png"}" />
+            <span class="todo-text">${newText}</span>
+        </div>
+        <div>
+            <img class="edit todo-controls" onclick="UpdateToDoItems(this)" src="/images/edit.png" />
+            <img class="delete todo-controls" onclick="DeleteToDoItems(this)" src="/images/delete.png" />
+        </div>
+    `;
+
+    // Reassign `updateText` to the newly updated element
+    updateText = parentLi.querySelector(".todo-text");
+
     setLocalStorage();
-  
-    updateText.innerText = todoValue.value;
+
+    // Reset the "Add" button
     addUpdate.setAttribute("onclick", "CreateToDoItems()");
     addUpdate.setAttribute("src", "/images/plus.png");
+
     todoValue.value = "";
-    setAlertMessage("Todo item Updated Successfully!");
-  }
+    setAlertMessage("Todo item updated successfully!");
+}
+
 
   function DeleteToDoItems(e) {
     let deleteValue =

@@ -9,10 +9,13 @@
 
 body {
     background: #c3e0f5;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Ensures footer stays at the bottom */
 }
 
 .container {
@@ -145,6 +148,7 @@ h5 {
     width: 100%;
     padding: 10px;
     margin-top: 15px;
+    margin-bottom: 20px;
     border: none;
     background: red;
     color: white;
@@ -161,12 +165,14 @@ h5 {
 
 /* Footer Styling */
 footer {
-    position: absolute;
-    bottom: 15px;
-    width: 100%;
     text-align: center;
-    color: rgb(0, 0, 0);
+    padding: 15px 0;
     font-size: 14px;
+    color: #333;
+    width: 100%;
+    padding: 50px;
+    padding-bottom: 3px;
+    position: relative; 
 }
 
 .socials {
