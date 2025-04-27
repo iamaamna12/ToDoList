@@ -30,7 +30,7 @@ A simple and interactive **To-Do List App** built using **HTML, CSS, and JavaScr
 3. **Run the app**  
    Simply open `index.html` in your browser!
 4. **Watch it live**
-   <a href="https://todolistbyaamna.netlify.app">ToDo List</a>
+   <a href="https://todolist.aamnashahab.com">ToDo List</a>
 
 ---
 
