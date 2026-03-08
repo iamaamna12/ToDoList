@@ -4,7 +4,7 @@ A simple and interactive **To-Do List App** built using **HTML, CSS, and JavaScr
 <img width="1440" alt="Screenshot 2025-03-04 at 11 25 29 PM" src="https://github.com/user-attachments/assets/d24529e8-b7e4-4c0a-8201-667ae0502e96" />
 
 ---
-<a href="https://todolistbyaamna.netlify.app" target="_blank">Click here to see it in action</a>
+<a href="https://todolist.aamnashahab.com" target="_blank">Click here to see it in action</a>
 ---
 ## 🚀 Features
 
